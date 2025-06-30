@@ -4,8 +4,7 @@
   left: 0;
   right: 0;
   @include media(desktop) {
-    // position: static;
-    // z-index: auto;
+
   }
 }
 
@@ -91,7 +90,7 @@
   right: 0;
   border-radius: 0 0 30px 30px;
   width: 174px;
-  height: 252px;
+  height: 242px;
   margin: 0 auto;
   z-index: 1001;
   opacity: 0;
@@ -101,4 +100,11 @@
 .backdrop.show {
   opacity: 1;
   visibility: visible;
+}
+
+.backdrop-list  {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-left: 13px;
 }
