@@ -2,6 +2,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -35,6 +36,7 @@ a {
   color: currentColor;
   text-decoration: none;
   display: inline;
+  white-space: nowrap;
 }
 
 button {

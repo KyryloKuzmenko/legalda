@@ -1,72 +1,104 @@
-.header {
-  padding: 20px 0;
-}
-
-.nav {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-}
-
-.nav-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-
-  @include media(tablet) {
-    justify-content: flex-start;
-  }
-
+.header-section {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  right: 0;
   @include media(desktop) {
-    justify-content: flex-end;
+    // position: static;
+    // z-index: auto;
   }
 }
 
-.nav-link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  @include font(30, 40);
-  color: $_header_color;
+.header-section .header-content {
+  display: flex;
+  align-items: center;
+  height: 53px;
+  position: relative;
+  background: #131926;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 0 0 20px 20px;
+  @include media(desktop) {
+    justify-content: space-between;
+    height: 90px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: $_header_accent_color;
+.header-list {
+  display: none;
+  @include media(desktop) {
+    display: flex;
+    gap: 50px;
+  }
 }
 
-.burger-btn,
-.btn-close {
-  padding: 0.5em 0.8em;
-  font-size: 1rem;
-  background-color: blueviolet;
-  border: none;
-  border-radius: 0.5em;
+.header-link {
+  font-size: 24px;
+  white-space: nowrap;
+}
+
+.header-section .header-content.no-right-radius {
+  border-radius: 0 0 0 20px;
+}
+
+.title-wrap {
+  background: #143964;
+  border-radius: 20px;
+  padding-left: 8px;
+  padding-right: 8px;
+  @include media(desktop) {
+    order: 3;
+  }
+}
+
+.header-title {
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
   color: #fff;
+  @include media(desktop) {
+    font-size: 24px;
+    white-space: nowrap;
+  }
+}
+
+.header-logo {
+  height: 53px;
+  margin-left: 40px;
+  object-fit: contain;
+  @include media(desktop) {
+    height: 83px;
+    margin: 0;
+  }
 }
 
 .burger-menu {
-  background-color: lightgreen;
-  display: flex;
-  justify-content: space-between;
-  width: 150px;
-  padding: 8px;
+  width: 34px;
+  height: 34px;
   position: absolute;
-  top: 0;
+  right: 20px;
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.header-section .backdrop {
+  position: absolute;
+  background: #131926;
+  top: 53px;
   right: 0;
+  border-radius: 0 0 30px 30px;
+  width: 174px;
+  height: 252px;
+  margin: 0 auto;
+  z-index: 1001;
+  opacity: 0;
+  visibility: hidden;
 }
 
-.btn-close {
-  align-self: baseline;
-  padding: 4px;
-}
-
-[data-visible='open'] {
-  display: flex;
-}
-
-[data-visible='close'] {
-  display: none;
+.backdrop.show {
+  opacity: 1;
+  visibility: visible;
 }
