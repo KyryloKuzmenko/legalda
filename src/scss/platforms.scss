@@ -1,0 +1,62 @@
+.platforms-section .platforms-content {
+  padding-bottom: 65px;
+  @include media(desktop) {
+    padding-bottom: 100px;
+    background-image: url('../img/desktop/platforms-desktop-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+  }
+}
+
+.platforms-subtitle {
+    margin-top: 10px;
+    @include media(desktop) {
+        margin-top: 20px;
+    }
+}
+
+.platforms-note {
+    padding: 0 30px;
+    @include media(desktop) {
+        width: 718px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.platforms-note,
+.platforms-subtitle {
+  font-style: italic;
+  text-align: center;
+}
+
+.platforms-swiper {
+  height: 58px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+      left: -10px;
+    width: calc(100% + 20px);
+  @include media(desktop) {
+    height: 125px;
+    width: 100%;
+    position: relative;
+    left: -60px;
+    width: calc(100% + 120px);
+    margin-top: 63px;
+    margin-bottom: 50px;
+  }
+}
+
+.platforms-swiper .platforms-swiper-slide {
+  width: auto !important;
+  height: 58px;
+}
+
+.platforms-img {
+  height: 58px;
+  object-fit: contain;
+  @include media(desktop) {
+    height: 125px;
+  }
+}
