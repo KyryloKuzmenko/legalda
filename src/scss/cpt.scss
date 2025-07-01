@@ -1,0 +1,41 @@
+.cookies-content-wrap {
+    background-color: #1E1E1E;
+    padding-top: 25px;
+}
+
+.back-arrow {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    top: 10px;
+    @include media(desktop) {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+.cookies-title,
+.terms-title,
+.privacy-title {
+    text-align: center;
+    margin-bottom: 33px;
+}
+
+.cookies-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.span-bullet {
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.cookies-link {
+  display: inline-block; 
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
