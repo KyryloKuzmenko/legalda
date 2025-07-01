@@ -10,19 +10,19 @@
 }
 
 .platforms-subtitle {
-    margin-top: 10px;
-    @include media(desktop) {
-        margin-top: 20px;
-    }
+  margin-top: 10px;
+  @include media(desktop) {
+    margin-top: 20px;
+  }
 }
 
 .platforms-note {
-    padding: 0 30px;
-    @include media(desktop) {
-        width: 718px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  padding: 0 30px;
+  @include media(desktop) {
+    width: 718px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .platforms-note,
@@ -35,8 +35,8 @@
   height: 58px;
   margin-top: 30px;
   margin-bottom: 20px;
-      left: -10px;
-    width: calc(100% + 20px);
+  left: -10px;
+  width: calc(100% + 20px);
   @include media(desktop) {
     height: 125px;
     width: 100%;

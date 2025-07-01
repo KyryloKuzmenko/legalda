@@ -1,0 +1,23 @@
+.promise-section .promise-content {
+    padding-bottom: 50px;
+    padding-left: 28px;
+    padding-right: 28px;
+    @include media(desktop) {
+        padding-bottom: 127px;
+    }
+}
+
+
+.promise-text {
+    margin-top: 30px;
+    font-style: italic;
+    text-align: center;
+    padding: 0 5px;
+    @include media(desktop) {
+        width: 100%;
+        max-width: 867px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 50px;
+    }
+}
