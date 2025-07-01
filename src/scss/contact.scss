@@ -1,0 +1,19 @@
+.contact-section .contact-content {
+  padding-top: 10px;
+  background: #284d78;
+  padding-bottom: 21px;
+  padding-left: 21px;
+  @include media(desktop) {
+    padding-top: 25px;
+    padding-bottom: 35px;
+  }
+}
+
+.contact-description {
+  margin-top: 30px;
+  @include media(desktop) {
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

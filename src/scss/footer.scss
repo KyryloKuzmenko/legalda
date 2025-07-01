@@ -1,0 +1,53 @@
+.footer-section .footer-content {
+  padding-top: 65px;
+  padding-bottom: 10px;
+ @include media(desktop) {
+    
+ }
+
+}
+
+.footer-title {
+  font-weight: 900;
+  font-size: 14px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  white-space: nowrap;
+  @include media(desktop) {
+    font-size: 50px;
+  }
+}
+
+.footer-links-wrap {
+  margin-top: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 120px;
+  row-gap: 20px;
+  @include media(desktop) {
+    flex-direction: row;
+    gap: 85px;
+  }
+}
+
+.footer-link {
+  font-weight: 900;
+  font-size: 14px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
+.footer-rights {
+  font-weight: 400;
+  font-size: 19px;
+  color: rgba(255, 255, 255, 0.2);
+  margin-top: 20px;
+  @include media(desktop) {
+    font-size: 29px;
+    text-align: center;
+  }
+}
